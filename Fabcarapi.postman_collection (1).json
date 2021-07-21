@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "3dc19bf4-d853-40ae-b324-f8d66a642774",
+		"name": "Fabcarapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createCar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"header\": \"CNST_CREATE_CAR\",\n    \"arraycarvalues\": [\n        \"CAR200\",\n        \"Tesla\",\n        \"Tesla model 3\",\n        \"white\",\n        \"Paul\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://13.126.32.46:8080/invoke",
+					"protocol": "http",
+					"host": [
+						"13",
+						"126",
+						"32",
+						"46"
+					],
+					"port": "8080",
+					"path": [
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeCarOwner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"header\": \"CNST_CHANGE_CAR_OWNER\",\n    \"arraycarvalues\": [\n        \"CAR200\",\n        \"Jagadeesh\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://13.126.32.46:8080/invoke",
+					"protocol": "http",
+					"host": [
+						"13",
+						"126",
+						"32",
+						"46"
+					],
+					"port": "8080",
+					"path": [
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryCar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.126.32.46:8080/query/queryCar/CAR0",
+					"protocol": "http",
+					"host": [
+						"13",
+						"126",
+						"32",
+						"46"
+					],
+					"port": "8080",
+					"path": [
+						"query",
+						"queryCar",
+						"CAR0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryAllCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.126.32.46:8080/query/queryAllCars",
+					"protocol": "http",
+					"host": [
+						"13",
+						"126",
+						"32",
+						"46"
+					],
+					"port": "8080",
+					"path": [
+						"query",
+						"queryAllCars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
