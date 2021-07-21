@@ -1,0 +1,65 @@
+
+ Check running docker containers –
+docker ps –a
+
+ Check running & exited docker containers –
+docker ps
+
+ Check availabe docker images in the system –
+docker images
+
+ Check the logs of the container –
+docker logs <container_id> or
+docker logs <container_name>
+
+ Login to container –
+docker exec -it <container_id> bash or
+docker exec -it <container_name> bash
+
+ Restart docker container -
+docker restart <container_name>
+docker restart <container_id>
+
+ Start docker container –
+docker start <container_name> or
+docker start <container_id>
+
+ Stop docker container –
+docker stop <container_name> or
+docker stop <container_id>
+
+ Remove docker container –
+docker rm <container_name> or
+docker rm <container_id>
+
+ Remove the unused volumes –
+docker volume prune
+
+ Remove all unused containers, images –
+docker system prune
+
+ Remove unused networks –
+docker network prune
+
+ Check docker available networks –
+docker network ls
+
+ Check available nodes –
+docker node ls
+
+ Check docker services –
+docker service ls
+
+ Debug docker service –
+docker service ps <service_id>
+
+ Debug more –
+docker inspect <service_id> | for better understanding of the issue,
+Execute this command after executing above command, you can provide the
+service id from above command result
+
+ Show running processes in a container
+docker top <container>
+
+ Show live usage statistics of containers
+docker stats <container>

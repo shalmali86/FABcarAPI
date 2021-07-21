@@ -1,0 +1,8 @@
+Install nodejs
+curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+nodesource_setup.sh will be downloaded to your local folder.
+Run the script file:
+sudo ./nodesource_setup.sh
+The above script will install nodejs & npm.
+Run below command to install dependencies for fabcar nodesdk.
+sudo apt-get install build-essential
